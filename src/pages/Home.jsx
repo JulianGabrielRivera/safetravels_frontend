@@ -38,7 +38,11 @@ export const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="container position-relative" style={{ height: "250px" }}>
+      <div
+        ref={ref}
+        className="container position-relative"
+        style={{ height: "250px" }}
+      >
         <img src={beach} alt="" className="h-100 w-100 " />
         <h1 className="position-absolute top-50 translate-middle start-50 text-white">
           Safe Travels
