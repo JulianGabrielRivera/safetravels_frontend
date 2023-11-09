@@ -214,9 +214,7 @@ export const GoogleMaps = () => {
               );
             })}
         </div>
-        <div className="container">
-          <h2 className="mt-4">Cafecitos</h2>
-        </div>
+
         <div className="container mt-4">
           <div className="row">
             {cafeArray &&
@@ -239,6 +237,9 @@ export const GoogleMaps = () => {
               })}
           </div>
         </div>
+      </div>
+      <div className="container">
+        <h2 className="container mt-4 p-0">Cafecitos</h2>
       </div>
     </>
   );

@@ -207,8 +207,8 @@ export const CurrentLocationMap = ({ lat, long }) => {
               );
             })}
         </div>
-        <div className="container">
-          <h2 className="mt-4">Cafecitos</h2>
+        <div className="container p-0">
+          <h2 className="mt-4 ">Cafecitos</h2>
         </div>
         <div className="container mt-4">
           <div className="row">
