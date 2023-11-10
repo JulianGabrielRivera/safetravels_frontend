@@ -11,7 +11,9 @@ import geodudes from "../geodudes.json";
 
 export const Home = () => {
   const [places, setPlaces] = useState(geodudes);
+  const [search, setSearch] = useState("");
   const [allStates, setAllStates] = useState(null);
+  const [filteredStates, setFilteredStates] = useState(null);
   const ref = useRef(null);
   const handleUpClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -27,14 +29,30 @@ export const Home = () => {
     });
     console.log(newR);
     setAllStates(newR);
-    // console.log(uniqueCityData);
+  };
+
+  const filterTheStates = () => {
+    const uniqueCityData = places.filter((place, index, self) => {
+      return index === self.findIndex((p) => p.state === place.state);
+    });
+
+    const newR = uniqueCityData.map((place) => {
+      return { ...place, pic: costarica };
+    });
+    console.log(newR);
+    setFilteredStates(newR);
+    const filterArray = [
+      ...allStates.filter((state) => {
+        return state.state.toLowerCase().includes(search.toLowerCase());
+      }),
+    ];
+    setAllStates(filterArray);
   };
 
   useEffect(() => {
     states();
   }, []);
-  //   console.log(stateCoords(), "states");
-  // console.log(allStates);
+
   return (
     <>
       <NavBar />
@@ -58,6 +76,11 @@ export const Home = () => {
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
+                  onChange={(e) => {
+                    setSearch(e.target.value);
+                    filterTheStates();
+                  }}
+                  name="search"
                 />
                 <button class="btn border-white text-black" type="submit">
                   Search
@@ -68,15 +91,15 @@ export const Home = () => {
         </div>
       </section>
 
-      <div className="container">
-        <div className="row">
+      <div className="container ">
+        <div className="row  ">
           {allStates &&
             allStates.map((state) => {
               return (
                 <>
-                  <div className="col-6">
+                  <div className="col-6 ">
                     <div className="card-body">
-                      <img src={state.pic} alt="" className="img-fluid" />
+                      <img src={state.pic} alt="" className="img-fluid w-100" />
 
                       <h5 className="card-title">{state.state}</h5>
                       <p className="card-text m-0">

@@ -1,0 +1,138 @@
+[
+    {
+      "id": 1,
+      "name": "Caffeine Corner",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.5,
+      "vicinity": "123 Main Street, Cityville"
+    },
+    {
+      "id": 2,
+      "name": "Brew Haven",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.2,
+      "vicinity": "456 Oak Avenue, Townburg"
+    },
+    {
+      "id": 3,
+      "name": "Espresso Elegance",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.0,
+      "vicinity": "789 Elm Lane, Villagetown"
+    },
+    {
+      "id": 4,
+      "name": "Mocha Magic",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.8,
+      "vicinity": "101 Pine Street, Hamletville"
+    },
+    {
+      "id": 5,
+      "name": "Bean Bliss",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.3,
+      "vicinity": "202 Cedar Avenue, Suburbia"
+    },
+    {
+      "id": 6,
+      "name": "Latte Lounge",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.6,
+      "vicinity": "303 Spruce Lane, Downtown"
+    },
+    {
+      "id": 7,
+      "name": "Cappuccino Cove",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.4,
+      "vicinity": "404 Maple Street, Metropolis"
+    },
+    {
+      "id": 8,
+      "name": "Java Junction",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.7,
+      "vicinity": "505 Oak Avenue, Uptown"
+    },
+    {
+      "id": 9,
+      "name": "Aroma Alley",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.1,
+      "vicinity": "606 Elm Lane, Outskirts"
+    },
+    {
+      "id": 10,
+      "name": "Caffeine Oasis",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.9,
+      "vicinity": "707 Pine Street, Riverside"
+    },
+    {
+      "id": 11,
+      "name": "Bean Haven",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.2,
+      "vicinity": "808 Cedar Avenue, Riverside"
+    },
+    {
+      "id": 12,
+      "name": "Morning Brew",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.6,
+      "vicinity": "909 Spruce Lane, Uptown"
+    },
+    {
+      "id": 13,
+      "name": "Cuppa Charm",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.3,
+      "vicinity": "1010 Pine Street, Downtown"
+    },
+    {
+      "id": 14,
+      "name": "Sip & Savor",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.7,
+      "vicinity": "1111 Oak Avenue, Suburbia"
+    },
+    {
+      "id": 15,
+      "name": "Urban Grind",
+      "icon": "https://example.com/icons/coffee-icon.png",
+      "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+      "rating": 4.5,
+      "vicinity": "1212 Elm Lane, Vill"
+    },  
+    {
+        "id": 16,
+        "name": "Sunny Brews",
+        "icon": "https://example.com/icons/coffee-icon.png",
+        "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+        "rating": 4.4,
+        "vicinity": "1313 Maple Street, Hillside"
+      },
+    {
+        "id": 17,
+        "name": "Sunny Brews",
+        "icon": "https://example.com/icons/coffee-icon.png",
+        "photo": "https://source.unsplash.com/300x200/?coffee-shop",
+        "rating": 4.4,
+        "vicinity": "1313 Maple Street, Hillside"
+      }
+]

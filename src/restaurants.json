@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "name": "Delicious Delights",
+      "cuisine": "Italian",
+      "image": "https://source.unsplash.com/300x200/?italian-food",
+      "ratings": 4.5,
+      "userRatings": 120
+    },
+    {
+      "id": 2,
+      "name": "Sizzling Sushi",
+      "cuisine": "Japanese",
+      "image": "https://source.unsplash.com/300x200/?sushi",
+      "ratings": 4.2,
+      "userRatings": 90
+    },
+    {
+      "id": 3,
+      "name": "Spicy Bites",
+      "cuisine": "Mexican",
+      "image": "https://source.unsplash.com/300x200/?mexican-food",
+      "ratings": 4.0,
+      "userRatings": 80
+    },
+    {
+      "id": 4,
+      "name": "Tasty Tandoor",
+      "cuisine": "Indian",
+      "image": "https://source.unsplash.com/300x200/?indian-food",
+      "ratings": 4.8,
+      "userRatings": 150
+    },
+    {
+      "id": 5,
+      "name": "Burger Bonanza",
+      "cuisine": "American",
+      "image": "https://source.unsplash.com/300x200/?burger",
+      "ratings": 4.3,
+      "userRatings": 110
+    },
+    {
+      "id": 6,
+      "name": "Mouthwatering Mediterranean",
+      "cuisine": "Mediterranean",
+      "image": "https://source.unsplash.com/300x200/?mediterranean-food",
+      "ratings": 4.6,
+      "userRatings": 130
+    },
+    {
+      "id": 7,
+      "name": "Thai Temptations",
+      "cuisine": "Thai",
+      "image": "https://source.unsplash.com/300x200/?thai-food",
+      "ratings": 4.4,
+      "userRatings": 100
+    },
+    {
+      "id": 8,
+      "name": "French Feast",
+      "cuisine": "French",
+      "image": "https://source.unsplash.com/300x200/?french-food",
+      "ratings": 4.7,
+      "userRatings": 140
+    },
+    {
+      "id": 9,
+      "name": "Spanish Spice",
+      "cuisine": "Spanish",
+      "image": "https://source.unsplash.com/300x200/?spanish-food",
+      "ratings": 4.1,
+      "userRatings": 70
+    },
+    {
+      "id": 10,
+      "name": "Chinese Charms",
+      "cuisine": "Chinese",
+      "image": "https://source.unsplash.com/300x200/?chinese-food",
+      "ratings": 4.9,
+      "userRatings": 160
+    },
+    {
+      "id": 11,
+      "name": "Vegetarian Vibes",
+      "cuisine": "Vegetarian",
+      "image": "https://source.unsplash.com/300x200/?vegetarian-food",
+      "ratings": 4.5,
+      "userRatings": 120
+    },
+    {
+      "id": 12,
+      "name": "Seafood Sensations",
+      "cuisine": "Seafood",
+      "image": "https://source.unsplash.com/300x200/?seafood",
+      "ratings": 4.2,
+      "userRatings": 90
+    },
+    {
+      "id": 13,
+      "name": "Gourmet Greek",
+      "cuisine": "Greek",
+      "image": "https://source.unsplash.com/300x200/?greek-food",
+      "ratings": 4.0,
+      "userRatings": 80
+    },
+    {
+      "id": 14,
+      "name": "Comforting Cafeteria",
+      "cuisine": "Cafe",
+      "image": "https://source.unsplash.com/300x200/?cafe",
+      "ratings": 4.8,
+      "userRatings": 150
+    },
+    {
+      "id": 15,
+      "name": "Vegan Delights",
+      "cuisine": "Vegan",
+      "image": "https://source.unsplash.com/300x200/?vegan-food",
+      "ratings": 4.3,
+      "userRatings": 110
+    },
+    {
+      "id": 16,
+      "name": "BBQ Bliss",
+      "cuisine": "Barbecue",
+      "image": "https://source.unsplash.com/300x200/?bbq",
+      "ratings": 4.6,
+      "userRatings": 130
+    },
+    {
+      "id": 17,
+      "name": "Irresistible Ice Cream",
+      "cuisine": "Dessert",
+      "image": "https://source.unsplash.com/300x200/?ice-cream",
+      "ratings": 4.4,
+      "userRatings": 100
+    },
+    {
+      "id": 18,
+      "name": "Aromatic Arabica",
+      "cuisine": "Coffee Shop",
+      "image": "https://source.unsplash.com/300x200/?coffee-shop",
+      "ratings": 4.7,
+      "userRatings": 140
+    }
+]
+  

@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Hotel 1",
+      "address_string": "123 Main Street, Cityville",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 2",
+      "address_string": "456 Oak Avenue, Townburg",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 3",
+      "address_string": "789 Elm Lane, Villagetown",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 4",
+      "address_string": "101 Pine Street, Hamletville",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 5",
+      "address_string": "202 Cedar Avenue, Suburbia",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 6",
+      "address_string": "303 Spruce Lane, Downtown",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 7",
+      "address_string": "404 Maple Street, Metropolis",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 8",
+      "address_string": "505 Oak Avenue, Uptown",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 9",
+      "address_string": "606 Elm Lane, Outskirts",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 10",
+      "address_string": "707 Pine Street, Riverside",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 11",
+      "address_string": "808 Cedar Avenue, Riverside",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 12",
+      "address_string": "909 Spruce Lane, Uptown",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 13",
+      "address_string": "1010 Pine Street, Downtown",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 14",
+      "address_string": "1111 Oak Avenue, Suburbia",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 15",
+      "address_string": "1212 Elm Lane, Village",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    },
+    {
+      "name": "Hotel 16",
+      "address_string": "1313 Maple Street, Hillside",
+      "image": "https://source.unsplash.com/300x200/?hotel"
+    }
+  ]
+  
