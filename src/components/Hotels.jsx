@@ -9,7 +9,7 @@ export const Hotels = () => {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.BACK_END}/tripadvisor`)
+      .get(`${import.meta.env.VITE_APP_BACK_END}/tripadvisor`)
       .then((results) => {
         console.log(results.data);
 

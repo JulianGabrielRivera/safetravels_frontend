@@ -62,11 +62,12 @@ export const GoogleMaps = () => {
 
   const getRestaurantsAndCafes = (lat, long) => {
     axios
-      .post(`${process.env.VITE_APP_BACK_END}`, {
+      .post(`${import.meta.env.VITE_APP_BACK_END}`, {
         lat: lat,
         lng: long,
       })
       .then((results) => {
+        
         const restaurants = results.data.photos.map((photo, i) => {
           return {
             photo: photo,

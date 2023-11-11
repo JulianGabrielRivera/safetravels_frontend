@@ -7,7 +7,7 @@ export const NavBar = () => {
   const ref = useRef(null);
 
   const checkoutSesh = () => {
-    axios.post(`${import.meta.env.BACK_END}/stripe/stripe`).then((res) => {
+    axios.post(`${import.meta.env.VITE_APP_BACK_END}/stripe/stripe`).then((res) => {
       console.log(res.data);
       window.location.href = res.data;
     });

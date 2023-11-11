@@ -7,7 +7,6 @@ import { GeoContext } from "../context/Geolocation";
 import { NavBar } from "../components/NavBar";
 
 export const WeatherPage = () => {
-
   const [city, setCity] = useState("");
   const [population, setPopulation] = useState(null);
   const [forecastArray, setForeCastArray] = useState(null);
@@ -23,7 +22,7 @@ export const WeatherPage = () => {
     "warning",
     "info",
   ];
-
+  console.log(import.meta.env);
   const getForeCast = (lat, long) => {
     axios
       .get(

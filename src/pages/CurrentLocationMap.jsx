@@ -60,7 +60,7 @@ export const CurrentLocationMap = ({ lat, long }) => {
 
   const getRestaurantsAndCafes = (lat, long) => {
     axios
-      .post(`${import.meta.env.BACK_END}/google`, {
+      .post(`${import.meta.env.VITE_APP_BACK_END}/google`, {
         lat: lat,
         lng: long,
       })
@@ -82,7 +82,7 @@ export const CurrentLocationMap = ({ lat, long }) => {
       });
 
     axios
-      .post(`${import.meta.env.BACK_END}/google/cafe`, {
+      .post(`${import.meta.env.VITE_APP_BACK_END}/google/cafe`, {
         lat: lat,
         lng: long,
       })
