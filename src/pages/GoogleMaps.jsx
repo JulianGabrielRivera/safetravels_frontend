@@ -20,9 +20,9 @@ export const GoogleMaps = () => {
   const [restaurantsJson, setRestaurantsJson] = useState(restaurantsFromJson);
   const google = window.google;
   const [coffeesJson, setCoffeesJson] = useState(coffeeFromJson);
-
-  const [restaurantArray, setRestaurantArray] = useState(null);
-  const [cafeArray, setCafeArray] = useState(null);
+  console.log(coffeesJson);
+  const [restaurantArray, setRestaurantArray] = useState([]);
+  const [cafeArray, setCafeArray] = useState([]);
   const [restaurantPhotos, setRestaurantPhotos] = useState(null);
   const containerStyle = {
     width: "100%",
@@ -121,7 +121,6 @@ export const GoogleMaps = () => {
     //   return;
     // }
   }, [lat, long]);
-
   return (
     <>
       <div className="container mt-4  ">
@@ -201,52 +200,48 @@ export const GoogleMaps = () => {
         )}
       </div>
       <h2 className="container mt-4">Restaurants</h2>
-      {restaurantArray ? (
-        <div className="container mt-4">
-          <div className="row">
-            {restaurantArray.map((restaurant) => {
-              return (
-                <>
-                  <div className="col-4 mt-4 ">
+
+      <div className="container mt-4">
+        <div className="row">
+          {restaurantArray.length > 0
+            ? restaurantArray.map((restaurant) => {
+                return (
+                  <>
+                    <div className="col-4 mt-4 ">
+                      <div className="card p-3">
+                        <img src={restaurant.photo} alt="" height={200} />
+                        <h3 className="fs-6">{restaurant.name}</h3>
+                        <p>Rating: {restaurant.ratings}</p>
+                        <p>Total User Ratings: {restaurant.userRatings}</p>
+                      </div>
+                    </div>
+                  </>
+                );
+              })
+            : restaurantsJson?.map((restaurant) => {
+                return (
+                  <div className="col-4 mt-4 " key={restaurant.id}>
                     <div className="card p-3">
-                      <img src={restaurant.photo} alt="" height={200} />
+                      <img src={restaurant.image} alt="" height={200} />
                       <h3 className="fs-6">{restaurant.name}</h3>
+                      <p>{restaurant.cuisine}</p>
                       <p>Rating: {restaurant.ratings}</p>
                       <p>Total User Ratings: {restaurant.userRatings}</p>
                     </div>
                   </div>
-                </>
-              );
-            })}
-          </div>
+                );
+              })}
         </div>
-      ) : (
-        <div className="container mt-4">
-          <div className="row">
-            {restaurantsJson.map((restaurant) => {
-              return (
-                <div className="col-4 mt-4 " key={restaurant.id}>
-                  <div className="card p-3">
-                    <img src={restaurant.image} alt="" height={200} />
-                    <h3 className="fs-6">{restaurant.name}</h3>
-                    <p>{restaurant.cuisine}</p>
-                    <p>Rating: {restaurant.ratings}</p>
-                    <p>Total User Ratings: {restaurant.userRatings}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
+      </div>
+
       <div className="container">
         <h2 className="container mt-4 p-0">Cafecitos</h2>
       </div>
-      {cafeArray ? (
-        <div className="container mt-4">
-          <div className="row">
-            {cafeArray &&
-              cafeArray.map((cafePhoto) => {
+
+      <div className="container mt-4">
+        <div className="row">
+          {cafeArray.length > 0
+            ? cafeArray.map((cafePhoto) => {
                 return (
                   <>
                     <div className="col-4 mt-4">
@@ -262,14 +257,8 @@ export const GoogleMaps = () => {
                     </div>
                   </>
                 );
-              })}
-          </div>
-        </div>
-      ) : (
-        <div className="container mt-4">
-          <div className="row">
-            {coffeesJson &&
-              coffeesJson.map((cafePhoto) => {
+              })
+            : coffeesJson?.map((cafePhoto) => {
                 return (
                   <>
                     <div className="col-4 mt-4">
@@ -285,9 +274,8 @@ export const GoogleMaps = () => {
                   </>
                 );
               })}
-          </div>
         </div>
-      )}
+      </div>
     </>
   );
 };
