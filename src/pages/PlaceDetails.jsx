@@ -9,8 +9,6 @@ import { Hotels } from "../components/Hotels";
 import { GeoContext } from "../context/Geolocation";
 
 export const PlaceDetails = () => {
- 
-
   const [weatherStats, setWeatherStats] = useState({
     myLocation: "",
     where: "",
@@ -20,7 +18,7 @@ export const PlaceDetails = () => {
     tempMin: null,
     weatherLogo: "",
   });
- 
+
   const { lat, long, setLatitude, setLongitude } = useContext(GeoContext);
 
   const todaysWeather = (lat, long) => {
@@ -31,7 +29,6 @@ export const PlaceDetails = () => {
         }&units=imperial`
       )
       .then((results) => {
-        
         setWeatherStats((prev) => ({
           ...prev,
           myLocation: results.data.name,
