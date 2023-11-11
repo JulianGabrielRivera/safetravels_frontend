@@ -1,11 +1,15 @@
 import React from "react";
 import { createContext, useState, useEffect } from "react";
-
+import restaurantsFromJson from "../restaurants.json";
+import coffeeFromJson from "../coffees.json";
 const GeoContext = createContext();
 
 const GeoLocationWrapper = ({ children }) => {
   const [lat, setLatitude] = useState(null);
   const [long, setLongitude] = useState(null);
+  const [restaurantsJson, setRestaurantsJson] = useState(restaurantsFromJson);
+
+  const [coffeesJson, setCoffeesJson] = useState(coffeeFromJson);
   useEffect(() => {
     // if ("geolocation" in navigator) {
 
@@ -22,7 +26,16 @@ const GeoLocationWrapper = ({ children }) => {
     // }
   }, [lat, long]);
   return (
-    <GeoContext.Provider value={{ lat, long, setLatitude, setLongitude }}>
+    <GeoContext.Provider
+      value={{
+        lat,
+        long,
+        setLatitude,
+        setLongitude,
+        restaurantsJson,
+        coffeesJson,
+      }}
+    >
       {children}
     </GeoContext.Provider>
   );

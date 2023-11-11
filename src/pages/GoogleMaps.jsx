@@ -7,23 +7,16 @@ import {
   Autocomplete,
   DirectionsRenderer,
 } from "@react-google-maps/api";
-import { Link } from "react-router-dom";
 import { GeoContext } from "../context/Geolocation";
-import restaurantsFromJson from "../restaurants.json";
-import coffeeFromJson from "../coffees.json";
 
 import { useState, useRef, useEffect, useContext } from "react";
 
 export const GoogleMaps = () => {
-  const { lat, long } = useContext(GeoContext);
+  const { lat, long, restaurantsJson, coffeesJson } = useContext(GeoContext);
 
-  const [restaurantsJson, setRestaurantsJson] = useState(restaurantsFromJson);
   const google = window.google;
-  const [coffeesJson, setCoffeesJson] = useState(coffeeFromJson);
-  console.log(coffeesJson);
   const [restaurantArray, setRestaurantArray] = useState([]);
   const [cafeArray, setCafeArray] = useState([]);
-  const [restaurantPhotos, setRestaurantPhotos] = useState(null);
   const containerStyle = {
     width: "100%",
     height: "400px",
