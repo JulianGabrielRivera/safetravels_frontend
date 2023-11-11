@@ -19,7 +19,6 @@ export const CurrentLocationMap = ({ lat, long }) => {
   const [restaurantArray, setRestaurantArray] = useState([]);
   const [cafeArray, setCafeArray] = useState([]);
 
-
   console.log(restaurantArray);
   const containerStyle = {
     width: "100%",
@@ -61,7 +60,7 @@ export const CurrentLocationMap = ({ lat, long }) => {
 
   const getRestaurantsAndCafes = (lat, long) => {
     axios
-      .post("http://localhost:4000/google", {
+      .post(`${import.meta.env.BACK_END}/google`, {
         lat: lat,
         lng: long,
       })
@@ -83,7 +82,7 @@ export const CurrentLocationMap = ({ lat, long }) => {
       });
 
     axios
-      .post("http://localhost:4000/google/cafe", {
+      .post(`${import.meta.env.BACK_END}/google/cafe`, {
         lat: lat,
         lng: long,
       })

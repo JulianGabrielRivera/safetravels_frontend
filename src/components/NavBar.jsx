@@ -7,7 +7,7 @@ export const NavBar = () => {
   const ref = useRef(null);
 
   const checkoutSesh = () => {
-    axios.post("http://localhost:4000/stripe/stripe").then((res) => {
+    axios.post(`${import.meta.env.BACK_END}/stripe/stripe`).then((res) => {
       console.log(res.data);
       window.location.href = res.data;
     });

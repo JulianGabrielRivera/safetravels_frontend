@@ -9,7 +9,7 @@ export const Hotels = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/tripadvisor")
+      .get(`${import.meta.env.BACK_END}/tripadvisor`)
       .then((results) => {
         console.log(results.data);
 
