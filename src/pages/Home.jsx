@@ -15,6 +15,7 @@ export const Home = () => {
   const [allStates, setAllStates] = useState(null);
   const [filteredStates, setFilteredStates] = useState(null);
   const ref = useRef(null);
+
   const handleUpClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
