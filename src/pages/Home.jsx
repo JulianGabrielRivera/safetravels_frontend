@@ -29,23 +29,15 @@ export const Home = () => {
     });
     console.log(newR);
     setAllStates(newR);
+    setFilteredStates(newR);
   };
 
   const filterTheStates = () => {
-    const uniqueCityData = places.filter((place, index, self) => {
-      return index === self.findIndex((p) => p.state === place.state);
-    });
-
-    const newR = uniqueCityData.map((place) => {
-      return { ...place, pic: costarica };
-    });
-    console.log(newR);
-    setFilteredStates(newR);
     const filterArray = allStates.filter((state) => {
       return state.state.toLowerCase().includes(search.toLowerCase());
     });
 
-    setAllStates(filterArray);
+    setFilteredStates(filterArray);
   };
 
   useEffect(() => {
@@ -92,8 +84,8 @@ export const Home = () => {
 
       <div className="container ">
         <div className="row  ">
-          {allStates &&
-            allStates.map((state) => {
+          {filteredStates &&
+            filteredStates.map((state) => {
               return (
                 <>
                   <div className="col-6 ">
