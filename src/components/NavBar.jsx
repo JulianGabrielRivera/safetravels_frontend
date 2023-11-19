@@ -5,12 +5,18 @@ import axios from "axios";
 
 export const NavBar = () => {
   const ref = useRef(null);
-
-  const checkoutSesh = () => {
-    axios.post(`${import.meta.env.VITE_APP_BACK_END}/stripe/stripe`).then((res) => {
-      console.log(res.data);
-      window.location.href = res.data;
+  const sendMessage = () => {
+    axios.post("http://localhost:4000/send-message").then((response) => {
+      console.log("send");
     });
+  };
+  const checkoutSesh = () => {
+    axios
+      .post(`${import.meta.env.VITE_APP_BACK_END}/stripe/stripe`)
+      .then((res) => {
+        console.log(res.data);
+        window.location.href = res.data;
+      });
   };
   return (
     <div className="container" ref={ref}>
@@ -186,7 +192,10 @@ export const NavBar = () => {
                         style={{ height: "40px" }}
                         className="justify-content-center w-75 p-0"
                       >
-                        <button className="w-100 bg-info border-0 h-100 fs-4">
+                        <button
+                          className="w-100 bg-info border-0 h-100 fs-4"
+                          onClick={sendMessage}
+                        >
                           Get My Free Guide
                         </button>
                       </div>
