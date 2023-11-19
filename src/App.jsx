@@ -5,7 +5,7 @@ import { Home } from "./pages/Home";
 import { PlaceDetails } from "./pages/PlaceDetails";
 import { WeatherPage } from "./pages/WeatherPage";
 import { GeoDetails } from "./components/GeoDetails";
-import { PhoneSignup } from "./pages/PhoneSignup";
+// import { PhoneSignup } from "./pages/PhoneSignup";
 function App() {
   return (
     <>

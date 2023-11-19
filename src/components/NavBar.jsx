@@ -6,7 +6,7 @@ import axios from "axios";
 export const NavBar = () => {
   const ref = useRef(null);
   const sendMessage = () => {
-    axios.post("http://localhost:4000/send-message").then((response) => {
+    axios.post("http://localhost:4000/email-promo").then((response) => {
       console.log("send");
     });
   };
@@ -15,7 +15,7 @@ export const NavBar = () => {
       .post(`${import.meta.env.VITE_APP_BACK_END}/stripe/stripe`)
       .then((res) => {
         console.log(res.data);
-        window.location.href = res.data;
+        window.location.href = res.data.url;
       });
   };
   return (
