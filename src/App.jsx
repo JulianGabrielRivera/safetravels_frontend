@@ -14,7 +14,7 @@ function App() {
         <Route path="/place-details" element={<PlaceDetails />} />
         <Route path="/weather" element={<WeatherPage />} />
         <Route path="/geo/:state" element={<GeoDetails />} />
-        <Route path="/phone-number" element={<PhoneSignup />} />
+        {/* <Route path="/phone-number" element={<PhoneSignup />} /> */}
       </Routes>
     </>
   );

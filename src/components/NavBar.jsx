@@ -48,9 +48,9 @@ export const NavBar = () => {
           <Link to="/place-details" className="text-white text-decoration-none">
             My Location
           </Link>
-          <Link to="/phone-number" className="text-white text-decoration-none">
+          {/* <Link to="/phone-number" className="text-white text-decoration-none">
             Coupon
-          </Link>
+          </Link> */}
           <Link
             className="text-white text-decoration-none"
             data-bs-toggle="modal"
