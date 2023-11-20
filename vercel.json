@@ -1,6 +1,5 @@
 {
-    "routes":  [
-      {"source": "/geo/:state", "destination": "/"},
-      {"source": "/weather", "destination": "/"}
-    ]
-  }
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/"}
+  ]
+}
