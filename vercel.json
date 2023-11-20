@@ -1,5 +1,6 @@
 {
-    "rewrites":  [
-      {"source": "/(.*)", "destination": "/geo/:state"}
+    "routes":  [
+      {"source": "/geo/:state", "destination": "/"},
+      {"source": "/weather", "destination": "/"}
     ]
   }
