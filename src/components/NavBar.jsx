@@ -16,6 +16,14 @@ export const NavBar = () => {
       .then((res) => {
         console.log(res.data);
         window.location.href = res.data.url;
+
+        if (res.data.payment_status === "paid") {
+          axios
+            .post(`${import.meta.env.VITE_APP_BACK_END}/stripe/webhook`)
+            .then((response) => {
+              console.log(response);
+            });
+        }
       });
   };
   return (
