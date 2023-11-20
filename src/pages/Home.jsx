@@ -89,7 +89,7 @@ export const Home = () => {
             filteredStates.map((state) => {
               return (
                 <>
-                  <div className="col-6 ">
+                  <div className="col-6 col-md-4 col-lg-3">
                     <div className="card-body">
                       <img src={state.pic} alt="" className="img-fluid w-100" />
 
