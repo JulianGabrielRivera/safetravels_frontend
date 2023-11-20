@@ -213,7 +213,10 @@ export const GoogleMaps = () => {
               })
             : restaurantsJson?.map((restaurant) => {
                 return (
-                  <div className="col-4 mt-4 " key={restaurant.id}>
+                  <div
+                    className="col-6 col-md-4 col-lg-3mt-4 "
+                    key={restaurant.id}
+                  >
                     <div className="card p-3">
                       <img
                         className="img-fluid"
@@ -249,7 +252,7 @@ export const GoogleMaps = () => {
                           {cafePhoto.name}
                           <span> {cafePhoto.rating}</span>
                         </h2>
-                        <p className="text-lg">{cafePhoto.vicinity}</p>
+                        <p className="fs-6">{cafePhoto.vicinity}</p>
                       </div>
                     </div>
                   </>
@@ -258,14 +261,14 @@ export const GoogleMaps = () => {
             : coffeesJson?.map((cafePhoto) => {
                 return (
                   <>
-                    <div className="col-4 mt-4 text-sm">
+                    <div className="col-6 col-md-4 col-lg-3 mt-4 ">
                       <div className="card p-3">
                         <img src={cafePhoto.icon} alt="" width={50} />
                         <img src={cafePhoto.photo} className="img-fluid" />
                         <h2>{cafePhoto.name}</h2>
                         <p> Rating: {cafePhoto.rating}</p>
 
-                        <p>Address: {cafePhoto.vicinity}</p>
+                        <p className="fs-6">Address: {cafePhoto.vicinity}</p>
                       </div>
                     </div>
                   </>
