@@ -44,7 +44,7 @@ export const Hotels = () => {
                               <div className="col-4 mt-4">
                                 <img
                                   src={hotelData.images.medium.url}
-                                  style={{ width: "150px", height: "150px" }}
+                                  className="img-fluid"
                                 ></img>
                               </div>
                             </>
@@ -61,10 +61,7 @@ export const Hotels = () => {
                   <>
                     <div className="col-4 mt-4">
                       <div className="card p-3">
-                        <img
-                          src={hotel.image}
-                          style={{ width: "150px", height: "150px" }}
-                        ></img>
+                        <img src={hotel.image} className="img-fluid"></img>
                         <p>{hotel.name}</p>
                         <p>{hotel.address_string && hotel.address_string}</p>
                       </div>

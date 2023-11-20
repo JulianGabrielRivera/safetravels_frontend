@@ -1,6 +1,7 @@
 /* body {
   background-color: black;
 } */
+
 .beachVacation {
   background-image: url("./beachvacation.png");
   background-size: cover; /* Adjust as needed */
@@ -24,4 +25,9 @@
 }
 .glass-card {
   backdrop-filter: blur(10px); /* Adjust the blur value for the glass effect */
+}
+
+.heightZero {
+  height: 400px;
+  display: none;
 }

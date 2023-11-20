@@ -67,7 +67,6 @@ export const GoogleMaps = () => {
         lng: long,
       })
       .then((results) => {
-        
         const restaurants = results.data.photos.map((photo, i) => {
           return {
             photo: photo,
@@ -216,7 +215,11 @@ export const GoogleMaps = () => {
                 return (
                   <div className="col-4 mt-4 " key={restaurant.id}>
                     <div className="card p-3">
-                      <img src={restaurant.image} alt="" height={200} />
+                      <img
+                        className="img-fluid"
+                        src={restaurant.image}
+                        alt=""
+                      />
                       <h3 className="fs-6">{restaurant.name}</h3>
                       <p>{restaurant.cuisine}</p>
                       <p>Rating: {restaurant.ratings}</p>
@@ -241,12 +244,12 @@ export const GoogleMaps = () => {
                     <div className="col-4 mt-4">
                       <div className="card p-3">
                         <img src={cafePhoto.icon} alt="" width={50} />
-                        <img src={cafePhoto.photo} height={200} />
+                        <img className="img-fluid" src={cafePhoto.photo} />
                         <h2>
                           {cafePhoto.name}
                           <span> {cafePhoto.rating}</span>
                         </h2>
-                        <p>{cafePhoto.vicinity}</p>
+                        <p className="text-lg">{cafePhoto.vicinity}</p>
                       </div>
                     </div>
                   </>
@@ -255,10 +258,10 @@ export const GoogleMaps = () => {
             : coffeesJson?.map((cafePhoto) => {
                 return (
                   <>
-                    <div className="col-4 mt-4">
+                    <div className="col-4 mt-4 text-sm">
                       <div className="card p-3">
                         <img src={cafePhoto.icon} alt="" width={50} />
-                        <img src={cafePhoto.photo} height={200} />
+                        <img src={cafePhoto.photo} className="img-fluid" />
                         <h2>{cafePhoto.name}</h2>
                         <p> Rating: {cafePhoto.rating}</p>
 
