@@ -49,7 +49,7 @@ export const WeatherPage = () => {
   const ref = useRef(null);
 
   return (
-    <div>
+    <div className="container">
       <NavBar />
       <h2 className="text-center">Hows the Weather in {city}?</h2>
       <p className="text-center">Area population : {population} </p>
@@ -58,7 +58,7 @@ export const WeatherPage = () => {
         <div className="row">
           {forecastArray &&
             forecastArray.map((weather, i) => {
-              console.log(weather, i);
+              // console.log(weather, i);
               const date = new Date(weather.dt_txt);
               const options = {
                 weekday: "long",
@@ -70,28 +70,28 @@ export const WeatherPage = () => {
               console.log(formattedDate);
               return (
                 <>
-                  <div className="col-3 ">
+                  <div key={i} className="col-6 col-sm-4 col-md-3 mb-2">
                     <div
-                      className={`card mt-2 bg-${
+                      className={`bg-${
                         colorShuffleArray[
                           Math.floor(Math.random() * colorShuffleArray.length)
                         ]
                       }`}
                     >
                       <h2 className="fs-6 fw-bold m-3">{formattedDate}</h2>
-                      <div className="card-body">
-                        <img
-                          src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`}
-                          alt=""
-                        />
-                        <p>Feels like: {weather.main.feels_like}</p>
-                        <p>Temperature: {weather.main.temp}</p>
+                      {/* <div className="card"> */}
+                      <img
+                        src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`}
+                        alt=""
+                      />
+                      <p>Feels like: {weather.main.feels_like}</p>
+                      <p>Temperature: {weather.main.temp}</p>
 
-                        <p>{weather.weather[0].description}</p>
-                        <p>{weather.weather[0].main}</p>
-                      </div>
+                      <p>{weather.weather[0].description}</p>
+                      <p>{weather.weather[0].main}</p>
                     </div>
                   </div>
+                  {/* </div> */}
                 </>
               );
             })}
